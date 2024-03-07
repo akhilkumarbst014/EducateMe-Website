@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./sign.css">
+  <link rel="shortcut icon" href="./image/Hopeicon.png" type="image/x-icon">
+  <title>Sign up</title>
+</head>
+<body>
+
+  <div class="container">
+    
+    <div id="background-animation-container">
+      <div class="ani-bubble"></div>
+      <div class="ani-bubble"></div>
+      <div class="ani-bubble"></div>
+      <div class="ani-bubble"></div>
+      <div class="ani-bubble"></div>
+      <div class="ani-bubble"></div>
+      <div class="ani-bubble"></div>
+      <div class="ani-bubble"></div>
+      <div class="ani-bubble"></div>
+      <div class="ani-bubble"></div>
+      <div class="ani-bubble"></div>
+      <div class="ani-bubble"></div>
+      <div class="ani-bubble"></div>
+      <div class="ani-bubble"></div>
+      <div class="ani-bubble"></div>
+      <div class="ani-bubble"></div>
+    </div>
+
+
+
+    <div id="tabs">
+      <button class="tab tab__active">Sign Up</button>
+      <button class="tab">Log In</button>
+    </div>
+  
+    <div class="tabsContent">
+      <div class="tabContent show">
+        <h3 class="tabContent__header">Sign Up for Free</h3>
+        <form action="" class="form" name="signUp">
+          <div class="form__row form__row_2">
+            <input type="text" name="name" class="form__input form__input_name" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,15}$" title="Please Enter letter or number, max symbols 15">
+            <label for="name" class="form__placeholder">First Name</label>
+          </div>
+          <div class="form__row form__row_2">
+            <input type="text" name="lastName" class="form__input form__input_lastName" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,15}$" title="Please Enter letter or number, max symbols 15">
+            <label for="lastName" class="form__placeholder">Last Name</label>
+          </div>
+          <div class="form__row">
+            <input type="email" name="email" class="form__input form__input_email" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$">
+            <label for="email" class="form__placeholder" title="example@example.com">Email Address</label>
+          </div>
+          <div class="form__row">
+            <input type="password" name="pass" class="form__input form__input_pass" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="Password (UpperCase, LowerCase, Number/SpecialChar and min 8 Chars)">
+            <label for="pass" class="form__placeholder">Set A Password</label>
+          </div>
+          <input type="submit" class="form__btn tab" value="Get Started"></input>
+        </form>
+      </div>
+      <div class="tabContent">
+        <h3 class="tabContent__header">Login</h3>
+        <form action="" class="form" name="logIn">
+          <div class="form__row form__row_first">
+            <input type="email" name="email" class="form__input form__input_email" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$">
+            <label for="email" class="form__placeholder" title="example@example.com">Email Address</label>
+          </div>
+          <div class="form__row">
+            <input type="password" name="pass" class="form__input form__input_pass" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="Password (UpperCase, LowerCase, Number/SpecialChar and min 8 Chars)">
+            <label for="pass" class="form__placeholder">Password</label>
+          </div>
+          <input type="submit" class="form__btn tab" value="log in"></input>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./sign.js"></script>
+</html>

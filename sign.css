@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,700");
+
+body{
+  background: #000;
+}
+.container {
+  background-color: #24323d;
+  max-width: 440px;
+  padding: 28px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 100px auto auto auto;
+}
+
+#tabs {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.tab {
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  background-color: #435259;
+  border: none;
+}
+
+.tab__active {
+  background-color: #1ab188;
+}
+
+.tabContent {
+  box-sizing: border-box;
+  width: 100%;
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.tabContent__header {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-family: Roboto;
+  font-weight: 300;
+  margin: 0 0 35px 0;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form__row {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form__row:first-of-type.form__row_first {
+  margin-right: 0;
+}
+
+.form__row:first-of-type {
+  margin-right: 16px;
+}
+
+.form__row_2 {
+  width: 184px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 12px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #798790;
+  margin-bottom: 29px;
+  box-sizing: border-box;
+}
+
+.form__input:focus {
+  border: 1px solid #1ab188;
+  outline: none;
+}
+
+.form__placeholder {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: Roboto;
+  font-size: 12px;
+  color: #85939c;
+  pointer-events: none;
+}
+.form__placeholder:after {
+  content: " *";
+  color: #1ab188;
+}
+
+.form__btn {
+  background-color: #1ab188;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+
+
+body {
+  background-color: #333;
+  color: white;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+#background-animation-container {
+  background-color: #222;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1000;
+}
+
+.ani-bubble {
+  background-color: blue;
+  border-radius: 75px;
+  height: 150px;
+  position: absolute;
+  top: 100%;
+  width: 150px;
+
+  -webkit-animation: bubblemove 10s linear infinite;
+  -moz-animation: bubblemove 10s linear infinite;
+  animation: bubblemove 10s linear infinite;
+}
+
+@-webkit-keyframes bubblemove {
+  from { top: 100%; }
+  to   { top: -600px; }
+}
+@-moz-keyframes bubblemove {
+  from { top: 100%; }
+  to   { top: -600px; }
+}
+@keyframes bubblemove {
+  from { top: 100%; }
+  to   { top: -600px; } /* This must be far enough off screen to allow the largest object to wander off with enough delay before restarting at the bottom, to be caught by the interval timer */
+}
